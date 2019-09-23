@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+   <body>
+      <form id="myForm">
+         <select id="mySelect">
+            <option>One</option>
+            <option>Two</option>
+            <option>Three</option>
+         </select>
+         <input type="button" onclick="multipleFunc()" value="Select multiple options">
+      </form>
+      <p>Press CTRL and click above button to select multiple options at once.</p>
+      <script>
+         function multipleFunc() {
+            document.getElementById("mySelect").multiple = true;
+         }
+      </script>
+   </body>
+</html>
